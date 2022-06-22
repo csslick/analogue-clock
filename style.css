@@ -1,0 +1,50 @@
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock {
+  width: 400px;
+  height: 400px;
+  border: 10px solid #000;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  background-image: url('clock.svg');
+}
+
+.hour {
+  position: absolute;
+  left: calc(50% - 3px);
+  top: 15%;
+  width: 10px;
+  height: 35%;
+  background: #000;
+  transform: rotate(0);
+  transform-origin: center bottom;
+}
+
+.min{
+  position: absolute;
+  left: calc(50% - 3px);
+  top: 5%;
+  width: 10px;
+  height: 45%;
+  background: #000;
+  transform: rotate(0);
+  transform-origin: center bottom;
+}
+
+.sec {
+  position: absolute;
+  left: calc(50% - 4px);
+  top: 5%;
+  width: 4px;
+  height: 45%;
+  background: red;
+  transform: rotate(0);
+  transform-origin: center bottom;
+}
